@@ -30,6 +30,7 @@ def input_data_about_user(request):
 
     return render(request, 'authorization/authorization.html', context=data_keys)
 # I see you
+# check
 # я тута был
 # ⣇⢸⢸⣿⡿⢸⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⢂⡇⡟⢼⠟⠁⠄⠄⠄⠄⠄⠄
 # ⠄⠻⣌⢼⢻⣷⡧⣣⣝⢿⣿⣿⡙⠛⣿⣿⡿⢋⡼⣱⡇⠳⡄⠄⠄⠄⠄⠄⠄⠄
