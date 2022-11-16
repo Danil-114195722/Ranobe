@@ -1,0 +1,426 @@
+body,html {
+    height: 100%;
+    font-family: 'Habibi', serif;
+    font-family: 'Ubuntu', sans-serif;
+    width: 1568px;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 50px;
+    width: 1568px;
+    position: absolute;   
+    display: flex;
+    top: 40px;
+    left: 176px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    z-index: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.item2 {
+    padding-left: 116px;
+}
+
+.head {
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    right: 3px;
+}
+
+.animebg {
+    width: 1920;
+    height: 1080px;
+    position: absolute;
+}
+
+.txt1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    position: absolute;
+    top: 674px;
+    left: 176px;
+}
+
+.arrow {
+    position: absolute;
+    top: 1028px;
+    left: 945px;
+}
+
+.block2 {
+    position: absolute;
+    top: 1080px;
+    left: 0;
+    background-color: #231F1F;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.txt2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    position: absolute;
+    top: 58px;
+    left: 176px;
+    
+}
+
+.txt3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    position: absolute;
+    left: 176px;
+    top: 195px
+}
+
+.block2-line {
+    position: absolute;
+    width: 86px;
+    height: 3px;
+    background-color: #FFC700;
+    left: 390px;
+    top: 307px;
+}
+
+.block-img {
+    position: absolute;
+    top: 93px;
+    right: 176px;
+}
+
+.block-img img {
+    margin-left: 26px;
+}
+
+.block3 {
+    position: absolute;
+    width: 100%;
+    height: 455px;
+    top: 1580px;
+}
+
+img { 
+    pointer-events: none;
+}
+
+.block4{
+    position: absolute;
+    width: 100%;
+    top: 2035px;
+    height: 711px;
+    color: #231F1F;
+}
+
+.block4__content {
+    position: relative;
+    left: 176px;
+}
+
+.txt4 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    top: 60px;
+    left: 283px;
+}
+
+.txt5 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    top: 136px;
+    left: 183px;
+    text-align: center;
+}
+
+.txt6 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    top: 60px;
+    right: 659px;
+}
+
+.txt7 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    top: 136px;
+    right: 533px;
+    text-align: center;
+}
+
+.block-img2 {
+    position: absolute;
+    top: 320px;
+    left: -190px;
+    
+}
+
+.block-img2 img {
+    margin-left: 450px;
+}
+
+.block5 {
+    position: absolute;
+    left: 176px;
+    top: 2747px;
+    width: 1568px;
+    height: 805px;
+    background-color: #fff;
+    box-shadow: 10px 10px 100px 5px rgb(222, 222, 222);
+}
+
+.txt8 {
+    position: absolute;
+    color: #231F1F;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    top: 60px;
+    left: 630px;
+}
+
+.txt9 {
+    position: absolute;
+    color: #231F1F;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    left: 570px;
+    top: 135px
+}
+
+.block5-line {
+    position: absolute;
+    width: 86px;
+    height: 3px;
+    background-color: #FFC700;
+    top: 284px;
+    left: 743px;
+}
+
+.exist_email {
+    color: red;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    position: absolute;
+    top: 405px;
+    left: 600px;
+}
+
+.correct_add {
+    color: green;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    position: absolute;
+    top: 405px;
+    left: 620px;
+}
+
+.txt10 {
+    position: absolute;
+    color: #231F1F;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    top: 357px;
+    left: 630px;
+}
+
+::placeholder {
+    color: #AC7AFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px; 
+}
+
+#email {
+    width: 320px;
+    height: 20px;   
+    background-color: #F2F2F2;;
+    padding: 12px 15px;
+    border: none;  
+}
+
+#name {
+    width: 320px;
+    height: 20px;   
+    background-color: #F2F2F2;;
+    padding: 12px 15px;
+    border: none;  
+}
+
+#submit {
+    width: 350px;
+    height: 45px;   
+    background-color: #F2F2F2;;
+    border: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    color: #AC7AFF;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#email {
+    position: absolute;
+    top: 465px;
+    left: 610px;
+}
+
+#name {
+    position: absolute;
+    top: 565px;
+    left: 610px;
+}
+
+#submit {
+    position: absolute;
+    top: 665px;
+    left: 610px;
+}
+
+.block6 {
+    position: absolute;
+    background-color: #231F1F;
+    width: 1920px;
+    height: 520px;
+    top: 3852px;
+}
+
+
+.txt11{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    position: absolute;
+    top: 60px;
+    left: 176px;
+}
+
+.txt12 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    position: absolute;
+    top: 135px;
+    left: 176px;
+}
+
+.txt13 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    position: absolute;
+    left: 1105px;
+    top: 68px;
+}
+
+
+ul {
+    list-style-image: url(authorization/images/customlist.png);
+}
+
+.txt14 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    position: absolute;
+    left: 1085px;
+    top: 120px;
+}
+
+.txt14 li{
+    margin-top: 5px;
+}
+
+.footer {
+    max-height: 25px;
+    max-width: 1568px;
+}
+
+.txt15 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    position: absolute;
+    left: 176px;
+    top: 382px;
+}
+
+.vk {
+    position: absolute;
+    left: 382px;
+    top: 407px;
+}
+
+.yt {
+    position: absolute;
+    left: 432px;
+    top: 407px;
+}
+
+.twit {
+    position: absolute;
+    left: 480px;
+    top: 407px;
+}
+
+.fb {
+    position: absolute;
+    left: 530px;
+    top: 404px;
+}
+
+.txt16 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    top: 380px;
+    right: 435px;
+
+}
+
+.txt17 {
+    position: absolute;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    top: 382px;
+    right: 176px;
+}
+
