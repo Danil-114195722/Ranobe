@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
 from django.db import IntegrityError
+from django.http import HttpResponseRedirect
 
 from .models import Persons
 
@@ -23,9 +23,11 @@ def input_data_about_user(request):
             # создание экземпляра класса по введённым данным и его запись в БД
             Persons.objects.create(email=email_post, name=name_post)
             data_keys['correct_add'] = True
+            request.method = None
         except IntegrityError:
             # если в БД уже существует введённая почта или логин
             data_keys['exist_email'] = True
+            request.method = None
             return render(request, 'authorization/authorization.html', context=data_keys)
 
     return render(request, 'authorization/authorization.html', context=data_keys)
