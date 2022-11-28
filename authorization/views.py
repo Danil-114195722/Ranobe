@@ -30,10 +30,10 @@ def input_data_about_user(request):
             request.method = None
             return render(request, 'authorization/authorization.html', data_keys)
 
-    return HttpResponseRedirect
+    return render(request, 'authorization/authorization.html', data_keys)
+
 # I see you
 # check
-# я тута был
 # ⣇⢸⢸⣿⡿⢸⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⢂⡇⡟⢼⠟⠁⠄⠄⠄⠄⠄⠄
 # ⠄⠻⣌⢼⢻⣷⡧⣣⣝⢿⣿⣿⡙⠛⣿⣿⡿⢋⡼⣱⡇⠳⡄⠄⠄⠄⠄⠄⠄⠄
 # ⠄⠄⠈⠻⡉⣿⣿⡨⠙⠳⠭⣛⡿⠿⠿⣋⡴⢏⢁⡿⣱⣶⣱⣶⣷⣶⣄⠄⠄⠄

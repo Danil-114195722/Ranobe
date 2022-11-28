@@ -18,7 +18,7 @@
                 прослушивания и чтения ранобэ.
             </h1>
         </section>
-    </header>1
+    </header>
     <main class="main" >
             <div class="main__library library">
                 <section class="wrapper">
@@ -106,12 +106,12 @@
                             <div class="registry__subtitle">
                                 Поля для заполнения
                             </div>
-                            <form class="form" action="" method="POST">
+                                <form class="form" action="" method="POST">
                                 {% csrf_token %}
-                                {% if exist_email %}
-                                    <p class="exist_email">Такая почта или логин уже существует!</p>
-                                {% elif correct_add %}
+                                {% if correct_add %}
                                     <p class="correct_add">Ваши данные успешно добавлены</p>
+                                {% elif exist_email %}
+                                    <p class="exist_email">Такая почта или логин уже существует!</p>
                                 {% endif %}
                                 <input type="email" placeholder="Почта" required>
                                 <input type="text" placeholder="Ваше имя" required>
@@ -162,7 +162,7 @@
                             Каждый пользователь убедится
                         </h2>
                         <ul class="project__selection">
-                            <li>В удобности нашего сайта</li>
+                            <li>В удобстве нашего сайта</li>
                             <li>В качестве проделанной работы</li>
                             <li>В достоинствах этого сервиса </li>
                             <li>В практичности новых трендов</li>
