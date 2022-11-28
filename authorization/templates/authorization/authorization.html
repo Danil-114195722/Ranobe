@@ -107,8 +107,12 @@
                                 Поля для заполнения
                             </div>
                             <form class="form" action="" method="POST">
-                                <p class="exist_email">Такая почта или логин уже существует!</p>
-                                <p class="correct_add">Ваши данные успешно добавлены</p>
+                                {% csrf_token %}
+                                {% if exist_email %}
+                                    <p class="exist_email">Такая почта или логин уже существует!</p>
+                                {% elif correct_add %}
+                                    <p class="correct_add">Ваши данные успешно добавлены</p>
+                                {% endif %}
                                 <input type="email" placeholder="Почта" required>
                                 <input type="text" placeholder="Ваше имя" required>
                                 <input class="from__button" type="submit" placeholder="Отправить">

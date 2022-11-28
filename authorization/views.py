@@ -28,9 +28,9 @@ def input_data_about_user(request):
             # если в БД уже существует введённая почта или логин
             data_keys['exist_email'] = True
             request.method = None
-            return render(request, 'authorization/authorization.html', context=data_keys)
+            return render(request, 'authorization/authorization.html', data_keys)
 
-    return render(request, 'authorization/authorization.html', context=data_keys)
+    return HttpResponseRedirect
 # I see you
 # check
 # я тута был
