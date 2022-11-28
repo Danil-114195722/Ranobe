@@ -1,106 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href='{% static "authorization/css/normalize.css" %}'>
-    <link rel="stylesheet" type="text/css" href='{% static "authorization/css/styles2.css" %}'>
-    <link rel="preconnect" href='{% static "https://fonts.googleapis.com" %}'>
-    <link rel="preconnect" href='{% static "https://fonts.gstatic.com" crossorigin %}'>
-    <link href='{% static
-    "https://fonts.googleapis.com/css2?family=Habibi&family=Ubuntu:wght@400;500;700&display=swap" %}' rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href='{% static "authorization/css/style.css" %}'>
+    <link href='https://fonts.googleapis.com/css2?family=Habibi&family=Ubuntu:wght@400;500;700&display=swap' rel="stylesheet">
     <title>Authorization</title>
 </head>
 <body>
-    <div class="container">
-        <img src='{% static "authorization/img/bg2.png" %}' alt="animebg" class="animebg">
-        <div class="header">
-            <a href="#" class="item">Логотип</a>
-            <div class="head">
-                <a href="#block2" class="item2">Преимущества</a>
-                <a href="#block4as" class="item2">Пользователям</a>
-                <a href="#block5" class="item2">Регистрация</a>
-                <a href="#block6" class="item2">О нас</a>
+    <header class="header">
+        <section class="wrapper">
+            <h1 class="header__title">
+                Создаем лучший сервис для<br>
+                прослушивания и чтения ранобэ.
+            </h1>
+        </section>
+    </header>1
+    <main class="main" >
+            <div class="main__library library">
+                <section class="wrapper">
+                    <div class="library__content">
+                        <div class="library__title title">
+                            <h2 class="library__h2 h2">
+                                Большая библиотека интересных тайтлов
+                            </h2>
+                            <div class="library__subtitle subtitle">
+                                Здесь вы найдёте любые интересующие<br>
+                                вас произведения японской культуры
+                            </div>
+                        </div>
+                        <div class="library__anime">
+                            <img src="{% static 'authorization/img/Rectangle%2012.svg' %}" style="max-width: 30%" alt="logo">
+                            <img src="{% static 'authorization/img/Rectangle%2011.svg' %}" style="max-width: 30%" alt="logo">
+                            <img src="{% static 'authorization/img/Rectangle%2010.svg' %}" style="max-width: 30%" alt="logo">
+                        </div>
+                    </div>
+                </section>
             </div>
+        <div class="main__audio audio">
+            <section class="wrapper">
+                <div class="audio__content">
+                    <div class="audion__benefits">
+                        <div class="audio__item">
+                            <img src="{% static 'authorization/img/ico_headphones%201.svg' %}" style="max-width: 100%" alt="logo">
+                            <div class="audio__item__title">Удобство</div>
+                        </div>
+                        <div class="audio__item">
+                            <img src="{% static 'authorization/img/ico_sound%201.svg' %}" style="max-width: 100%" alt="logo">
+                            <div class="audio__item__title">Качество</div>
+                        </div>
+                        <div class="audio__item">
+                            <img src="{% static 'authorization/img/ico_mic%201.svg' %}" style="max-width: 100%" alt="logo">
+                            <div class="audio__item__title">Озвучка на выбор</div>
+                        </div>
+                    </div>
+                    <div class="audio__title title">
+                        <h2 class="audio__h2 h2">
+                            Формат аудио <br>прослушивания
+                        </h2>
+                        <div class="audio__subtitle subtitle">
+                            Озвученные и переведённые <br>ваши любимые произведения<br> теперь в удобном аудио режиме !
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <h1 class="txt1">Создаем лучший сервис для <br> 
-            прослушивания и чтения ранобэ</h1>
-            <div class="arrow" >
-                <a href="#block2"><img src='{% static "authorization/img/arrowlol.png" %}' alt="arrow"></a>
-            </div>
-        <div class="block2" id = "block2">
-            <h1 class="txt2">Большая библиотека <br> интересных тайтлов</h1>
-            <p class="txt3">Здесь вы найдёте любые интересующие <br> вас произведения японской культуры </p>
-            <div class="block2-line"></div>
-            <div class="block-img">
-                <img src='{% static "authorization/img/picdick.png" %}' alt="ranobe">
-                <img src='{% static "authorization/img/picdick2.png" %}' alt="ranobe2">
-                <img src='{% static "authorization/img/picdick3.png" %}' alt="ranobe3">
-            </div>
+        <div class="main__registry registry">
+            <section class="wrapper">
+                <div class="registry__content">
+                    <div class="registry__about">
+                        <div class="registry__item">
+                            <h2 class="registry__h2">
+                                Читателям
+                            </h2>
+                            <div class="registry__subtitle">
+                                Вы сможете найти старые и новые тайтлы в ваших любимых озвучках или заказать новые
+                            </div>
+                            <img src="{% static 'authorization/img/ico_book%201.svg' %}" style="max-width: 60%" alt="logo">
+                        </div>
+                        <div class="registry__item">
+                            <h2 class="registry__h2">
+                                Авторам
+                            </h2>
+                            <div class="registry__subtitle">
+                                Вы получите удобную площадку для публикации своих работ и новую аудиторию
+                            </div>
+                            <img src="{% static 'authorization/img/ico_pen%201.svg' %}" style="max-width: 60%" alt="logo">
+                        </div>
+                    </div>
+                    <div class="main__authorisation authorisation">
+                        <div class="authorisation__title">
+                            <h2 class="registry__h2">
+                                Регистрация
+                            </h2>
+                            <div class="registry__subtitle">
+                                Предлагаем принять участие
+                                в альфа-тестировании нашего
+                                проекта!
+                            </div>
+                        </div>
+                        <div class="authorisation__form">
+                            <div class="registry__subtitle">
+                                Поля для заполнения
+                            </div>
+                            <form class="form" action="" method="POST">
+                                <p class="exist_email">Такая почта или логин уже существует!</p>
+                                <p class="correct_add">Ваши данные успешно добавлены</p>
+                                <input type="email" placeholder="Почта" required>
+                                <input type="text" placeholder="Ваше имя" required>
+                                <input class="from__button" type="submit" placeholder="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="block3" id = "block3">
-            <img src='{% static "authorization/img/block3.png" %}' alt="block3">
-        </div>
-        <div class="block4" id = "block4as">
-            <div class="block4__content">
-                <h1 class="txt4" id = "block4a">Читателям</h1>
-                <p class="txt5">Вы сможете найти старые и <br>
-                    новые тайтлы в ваших любимых <br>
-                    озвучках или заказать новые</p>
-                <h1 class="txt6">Авторам</h1>
-                <p class="txt7">Вы получите удобную площадку <br>
-                    для публикации своих работ и <br>
-                    новую аудиторию</p>
-                <div class="block-img2">
-                    <img src='{% static "authorization/img/ico_book.png" %}' alt="book">
-                    <img src='{% static "authorization/img/ico_pen.png" %}' alt="book">
+    </main>
+    <footer class="footer">
+        <section class="wrapper">
+            <div class="footer__project project">
+                <div class="project__about">
+                    <div class="project__about__title">
+                        <h2 class="project__h2 h2">
+                            О проекте
+                        </h2>
+                        <div class="project__subtitle subtitle">
+                            Мы заметили отстутсвие удобных сервисов для чтения ранобэ,
+                            поэтому мы придумали решение этой проблемы - воплощение нашего сайта
+                        </div>
+                    </div>
+                    <div class="project__social">
+                        <div class="project__title">
+                            Мы в соцсетях
+                        </div>
+                        <div class="project__socnetwork">
+                            <a href="https://vk.com/dancrv"><img src="{% static 'authorization/img/iconVK%201.svg' %}" alt="logo"></a>
+                            <a href="https://vk.com/dancrv"><img src="{% static 'authorization/img/iconYouTube%201.svg' %}" alt="logo"></a>
+                            <a href="https://vk.com/dancrv"><img src="{% static 'authorization/img/iconTwitter%201.svg' %}" alt="logo"></a>
+                            <a href="https://vk.com/dancrv"><img src="{% static 'authorization/img/iconFB%201.svg' %}" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="project__email">
+                        <div class="project__title">
+                            Связаться с нами
+                        </div>
+                        <div class="project__title">
+                            example@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <div class="project__users">
+                    <div class="project__belief">
+                        <h2 class="project__h2 h2">
+                            Каждый пользователь убедится
+                        </h2>
+                        <ul class="project__selection">
+                            <li>В удобности нашего сайта</li>
+                            <li>В качестве проделанной работы</li>
+                            <li>В достоинствах этого сервиса </li>
+                            <li>В практичности новых трендов</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="block5" id = "block5">
-             <h1 class="txt8">Регистрация</h1>
-             <p class="txt9">Предлагаем принять участие <br>
-                в альфа-тестировании нашего <br>
-                проекта!</p>
-            <div class="block5-line"></div>
-                <form action="" method="POST">
-                <p class="txt10">Поле для заполнения</p>
-                {% csrf_token %}
-                <input type="email" name="email" id="email" placeholder="Почта" required>
-                <input type="text" name="name" id="name" placeholder="Ваше имя" required>
-                {% if exist_email %}
-                    <p class="exist_email">Такая почта или логин уже существует!</p>
-                {% elif correct_add %}
-                    <p class="correct_add">Ваши данные успешно добавлены</p>
-                {% endif %}
-                <input type="submit" id="submit" value="Отправить">
-                </form>
-            </div>
-        <div class="block6" id = "block6">
-            <h1 class="txt11">О проекте</h1>
-            <p class="txt12">Мы заметили отстутсвие удобных сервисов <br>
-                для чтения ранобэ, поэтому мы придумали <br>
-                решение этой проблемы - воплощение <br> нашего сайта</p>
-            <h1 class="txt13">Каждый пользователь убедится</h1>
-            <ul class="txt14">
-                <li>в удобстве нашего сайта</li>
-                <li>в качестве проделанной работы</li>
-                <li>в достоинствах этого сервиса </li>
-                <li>в практичности новых трендов</li>
-            </ul>
-            <div class="footer">
-                <p class="txt15">Мы в соцсетях</p>
-                <a href="#"><img class="vk" src='{% static "authorization/img/iconVK.png" %}' alt="vk"></a>
-                <a href="#"><img class="yt" src='{% static "authorization/img/iconYouTube.png" %}' alt="youtube"></a>
-                <a href="#"><img class="twit" src='{% static "authorization/img/iconTwitter.png" %}' alt="twitter"></a>
-                <a href="#"><img class="fb" src='{% static "authorization/img/iconFB.png" %}' alt="facebook"></a>
-                <p class="txt16">Связаться с нами</p>
-                <a href="#"><p class="txt17">example@gmail.com</p></a>
-            </div>
-        </div>
-    </div>
+        </section>
+    </footer>
 </body>
 </html>
