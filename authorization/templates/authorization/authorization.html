@@ -123,13 +123,14 @@
                                 {% csrf_token %}
                                 <div class="registry__error">
                                     {% if exist_email %}
-                                    <p class="exist_email">Такая почта или логин уже существует!</p>
+                                        <p class="exist_email">Такая почта или логин уже существует!</p>
                                     {% elif correct_add %}
-                                    <p class="correct_add">Ваши данные успешно добавлены</p>
+                                        <p class="correct_add">Ваши данные успешно добавлены</p>
                                     {% endif %}
                                 </div>
-                                    <input type="email" placeholder="Почта" required>
-                                    <input type="text" placeholder="Ваше имя" required>
+                                    <br>
+                                    <input type="email" name="email" id="email" placeholder="Почта" required>
+                                    <input type="text" name="name" id="name" placeholder="Ваше имя" required>
                                     <input class="from__button" type="submit" placeholder="Отправить" id="submit">
                                     <div class="politic">
                                         <a href="politic" target="_blank">политика конденфициальности</a>
