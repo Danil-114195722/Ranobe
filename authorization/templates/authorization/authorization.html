@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 {% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +10,30 @@
     <link rel="stylesheet" type="text/css" href='{% static "authorization/css/normalize.css" %}'>
     <link rel="stylesheet" type="text/css" href='{% static "authorization/css/style.css" %}'>
     <link href='https://fonts.googleapis.com/css2?family=Habibi&family=Ubuntu:wght@400;500;700&display=swap' rel="stylesheet">
-    <title>Authorization</title>
+    <title>Ranoba</title>
 </head>
 <body>
     <header class="header">
         <section class="wrapper">
+            <div class="head">
+                <div class="head_logo">
+                    <a href="#">Логотип</a>
+                </div>
+                <div class="head_titles">
+                        <a href="#library">Библиотека</a>
+                        <a href="#forusers">Пользователю</a>
+                        <a href="#reg">Регистрация</a> 
+                </div>
+            </div>
             <h1 class="header__title">
                 Создаем лучший сервис для<br>
                 прослушивания и чтения ранобэ.
             </h1>
+
         </section>
     </header>
     <main class="main" >
-            <div class="main__library library">
+            <div class="main__library library" id="library">
                 <section class="wrapper">
                     <div class="library__content">
                         <div class="library__title title">
@@ -33,9 +46,9 @@
                             </div>
                         </div>
                         <div class="library__anime">
-                            <img src="{% static 'authorization/img/Rectangle%2012.svg' %}" style="max-width: 30%" alt="logo">
-                            <img src="{% static 'authorization/img/Rectangle%2011.svg' %}" style="max-width: 30%" alt="logo">
-                            <img src="{% static 'authorization/img/Rectangle%2010.svg' %}" style="max-width: 30%" alt="logo">
+                            <img src="{% static 'authorization/img/Rectangle%2012.svg' %}" style="max-width: 30%" alt="logo" id="library__anime1">
+                            <img src="{% static 'authorization/img/Rectangle%2011.svg' %}" style="max-width: 30%" alt="logo" id="library__anime2">
+                            <img src="{% static 'authorization/img/Rectangle%2010.svg' %}" style="max-width: 30%" alt="logo" id="library__anime3">
                         </div>
                     </div>
                 </section>
@@ -68,7 +81,7 @@
                 </div>
             </section>
         </div>
-        <div class="main__registry registry">
+        <div class="main__registry registry" id="forusers">
             <section class="wrapper">
                 <div class="registry__content">
                     <div class="registry__about">
@@ -91,7 +104,7 @@
                             <img src="{% static 'authorization/img/ico_pen%201.svg' %}" style="max-width: 60%" alt="logo">
                         </div>
                     </div>
-                    <div class="main__authorisation authorisation">
+                    <div class="main__authorisation authorisation" id="reg">
                         <div class="authorisation__title">
                             <h2 class="registry__h2">
                                 Регистрация
@@ -106,16 +119,17 @@
                             <div class="registry__subtitle">
                                 Поля для заполнения
                             </div>
-                                <form class="form" action="" method="POST">
-                                {% csrf_token %}
-                                {% if correct_add %}
-                                    <p class="correct_add">Ваши данные успешно добавлены</p>
-                                {% elif exist_email %}
+                            <form class="form" action="" method="POST">
+                                <div class="registry__error">
                                     <p class="exist_email">Такая почта или логин уже существует!</p>
-                                {% endif %}
-                                <input type="email" placeholder="Почта" required>
-                                <input type="text" placeholder="Ваше имя" required>
-                                <input class="from__button" type="submit" placeholder="Отправить">
+                                    <p class="correct_add">Ваши данные успешно добавлены</p>  
+                                </div>
+                                    <input type="email" placeholder="Почта" required>
+                                    <input type="text" placeholder="Ваше имя" required>
+                                    <input class="from__button" type="submit" placeholder="Отправить" id="submit">
+                                    <div class="politic">
+                                        <a href="politic" target="_blank">политика конденфициальности</a>
+                                    </div>
                             </form>
                         </div>
                     </div>
@@ -162,7 +176,7 @@
                             Каждый пользователь убедится
                         </h2>
                         <ul class="project__selection">
-                            <li>В удобстве нашего сайта</li>
+                            <li>В удобности нашего сайта</li>
                             <li>В качестве проделанной работы</li>
                             <li>В достоинствах этого сервиса </li>
                             <li>В практичности новых трендов</li>
