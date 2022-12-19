@@ -361,3 +361,21 @@ a:hover {
         text-align: center;
     }
 }
+
+
+/* Бесполезные, но прикольные фичи */
+
+.library__anime1{
+    border: 3px solid #231F1F;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+
+.library__anime1:hover {
+    border: 3px solid #FFC700;
+    border-radius: 15px;
+    max-width: 20%;
+    opacity: 1;
+    transition: 0.2s;
+}

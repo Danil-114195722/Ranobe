@@ -46,9 +46,9 @@
                             </div>
                         </div>
                         <div class="library__anime">
-                            <img src="{% static 'authorization/img/Rectangle%2012.svg' %}" style="max-width: 30%" alt="logo" id="library__anime1">
-                            <img src="{% static 'authorization/img/Rectangle%2011.svg' %}" style="max-width: 30%" alt="logo" id="library__anime2">
-                            <img src="{% static 'authorization/img/Rectangle%2010.svg' %}" style="max-width: 30%" alt="logo" id="library__anime3">
+                            <img src="{% static 'authorization/img/Rectangle%2012.svg' %}" style="max-width: 30%" alt="logo" class ="library__anime1">
+                            <img src="{% static 'authorization/img/Rectangle%2011.svg' %}" style="max-width: 30%" alt="logo" class ="library__anime1">
+                            <img src="{% static 'authorization/img/Rectangle%2010.svg' %}" style="max-width: 30%" alt="logo" class ="library__anime1">
                         </div>
                     </div>
                 </section>
@@ -133,7 +133,7 @@
                                     <input type="text" name="name" id="name" placeholder="Ваше имя" required>
                                     <input class="from__button" type="submit" placeholder="Отправить" id="submit">
                                     <div class="politic">
-                                        <a href="politic" target="_blank">политика конденфициальности</a>
+                                        <a href="{% url 'politic' %}" target="_blank">политика конденфициальности</a>
                                     </div>
                             </form>
                         </div>
