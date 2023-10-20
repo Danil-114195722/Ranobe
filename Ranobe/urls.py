@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from Ranobe import secure_data
+
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(f'{secure_data.admin_url}/', admin.site.urls),
     path('', include('authorization.urls'))
 ]
