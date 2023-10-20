@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.db import IntegrityError
 
-from .models import Persons
+from .models import Person
 
 
 # Create your views here.
@@ -20,7 +20,7 @@ def input_data_about_user(request):
         # проверка на уникальность данных
         try:
             # создание экземпляра класса по введённым данным и его запись в БД
-            Persons.objects.create(email=email_post, name=name_post)
+            Person.objects.create(email=email_post, name=name_post)
             data_keys['correct_add'] = True
         except IntegrityError:
             # если в БД уже существует введённая почта или логин
