@@ -160,6 +160,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
+/mysql_database
 Dockerfile
 docker-compose.yml
 .dockerignore
