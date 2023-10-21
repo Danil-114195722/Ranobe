@@ -20,6 +20,6 @@ from Ranobe import secure_data
 
 
 urlpatterns = [
-    path(f'{secure_data.admin_url}/', admin.site.urls),
+    path(f'{secure_data.ADMIN_URL}/', admin.site.urls),
     path('', include('authorization.urls'))
 ]

@@ -24,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = secure_data.django_secret_key
+SECRET_KEY = secure_data.DJANGO_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = secure_data.DEBUG
 
-ALLOWED_HOSTS = ['127.0.0.1', '79.137.204.172']
+ALLOWED_HOSTS = secure_data.ALLOWED_HOSTS
 
 
 # Application definition
@@ -78,16 +78,16 @@ WSGI_APPLICATION = 'Ranobe.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
+# DB link docker-compose
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': secure_data.db_name,
-        'USER': secure_data.db_user,
-        'PASSWORD': secure_data.db_password,
-        'HOST': secure_data.db_host,
-        'OPTIONS': {
-            'unix_socket': '/var/run/mysqld/mysqld.sock',
-        },
+        'NAME': secure_data.DB_NAME,
+        'USER': secure_data.DB_USER,
+        'PASSWORD': secure_data.DB_PASSWORD,
+        'HOST': secure_data.DB_HOST,
+        'PORT': secure_data.PORT,
     }
 }
 
