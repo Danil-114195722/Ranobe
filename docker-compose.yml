@@ -1,0 +1,41 @@
+version: "3.8"
+
+
+services:
+  db:
+    image: mysql:latest
+    container_name: ranoba_landing_mysql
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./mysql_database:/var/lib/mysql
+    networks:
+      proj_network:
+        ipv4_address: 172.16.1.4
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ranoba_landing_django
+    restart: always
+    env_file:
+      - .env
+    command: >
+      bash -c "python3 /home/Ranobe/manage.py migrate && python3 /home/Ranobe/manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    networks:
+      proj_network:
+        ipv4_address: 172.16.1.5
+    depends_on:
+      - db
+
+
+networks:
+  proj_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24
