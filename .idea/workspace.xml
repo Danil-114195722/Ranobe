@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9c65b46-400a-4f69-a661-70a74674281b" name="Changes" comment="Add requirements.txt">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e9c65b46-400a-4f69-a661-70a74674281b" name="Changes" comment="Add common commands to README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ranobe/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ranobe/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ranobe/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ranobe/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/templates/authorization/authorization.html" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/templates/authorization/authorization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +49,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/danil/Documents/Hacks/RinhHack_2023_(Rinh)/SupportTickets/db_connect.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore_missing_gitignore": "true",
+    "last_opened_file_path": "/home/danil/Documents/Hacks/Autumn_DGTU/TTK_Bot",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Impotant\Python\DjangoProjects\Ranobe\authorization\static\authorization" />
@@ -197,7 +191,55 @@
       <option name="project" value="LOCAL" />
       <updated>1697786768758</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add secure data to .gitignore">
+      <option name="closed" value="true" />
+      <created>1697885442167</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1697885442167</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add &quot;.env&quot; (hidden, not published); change static vars to .env vars">
+      <option name="closed" value="true" />
+      <created>1697885451309</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1697885451309</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Create requirements.txt">
+      <option name="closed" value="true" />
+      <created>1697885463330</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1697885463330</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Change footer links">
+      <option name="closed" value="true" />
+      <created>1697885475548</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1697885475548</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add Dockerfile and create docker-compose">
+      <option name="closed" value="true" />
+      <created>1697885498327</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1697885498327</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add common commands to README.md">
+      <option name="closed" value="true" />
+      <created>1697885519656</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1697885519656</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -227,6 +269,12 @@
     <MESSAGE value="Hide admin url" />
     <MESSAGE value="Change DB from SQLite to MySQL; create admin panel" />
     <MESSAGE value="Add requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add requirements.txt" />
+    <MESSAGE value="Add secure data to .gitignore" />
+    <MESSAGE value="Add &quot;.env&quot; (hidden, not published); change static vars to .env vars" />
+    <MESSAGE value="Create requirements.txt" />
+    <MESSAGE value="Change footer links" />
+    <MESSAGE value="Add Dockerfile and create docker-compose" />
+    <MESSAGE value="Add common commands to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add common commands to README.md" />
   </component>
 </project>
